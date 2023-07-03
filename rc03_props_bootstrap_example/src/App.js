@@ -6,8 +6,8 @@ import "bootstrap/dist/css/bootstrap.css";
 
 const App = () => {
     return (
-        <div className="row justify-content-center gap-1">
-            <h1 className="text-danger text-center m-5 border-bottom display-1">
+        <div className="row justify-content-center gap-1 m-3">
+            <h1 className="text-danger text-center m-4 border-bottom display-1">
                 FullVitaminStack Team
             </h1>
             {contacts.map((item) => {
