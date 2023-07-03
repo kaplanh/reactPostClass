@@ -6,19 +6,22 @@ import "bootstrap/dist/css/bootstrap.css";
 
 const App = () => {
     return (
-        <div className="container">
-            <h1 className="text-danger text-center">FullVitaminStack Team</h1>
+        <div className="row justify-content-center gap-1">
+            <h1 className="text-danger text-center m-5 border-bottom display-1">
+                FullVitaminStack Team
+            </h1>
             {contacts.map((item) => {
                 const { id, name, imgURL, phone, email } = item;
                 return (
-                    <div key={id}>
+                    <>
                         <Card
+                            id={id}
                             name={name}
                             imgURL={imgURL}
                             phone={phone}
                             email={email}
                         />
-                    </div>
+                    </>
                 );
             })}
         </div>
