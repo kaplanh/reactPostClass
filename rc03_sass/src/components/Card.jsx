@@ -1,22 +1,22 @@
-import CardStyle from "../scss/card.module.scss"
+
 
 const Card = ({ data }) => {
   console.log(data)
   //? js
   return (
-    <div className={CardStyle.container}>
+    <div >
       {data.map((item) => {
         //? JS
         const { id, name, job, img, comment } = item
         return (
-          <div key={id} className={CardStyle.card}>
+          <div key={id}>
             <h1>{name}</h1>
             <h3>{job}</h3>
             <p>{comment}</p>
             <img src={img} alt="img" />
-            <div className={CardStyle.buttons}>
-              <button className={CardStyle.small}>Small</button>
-              <button className={CardStyle.large}>Large</button>
+            <div >
+              <button >Small</button>
+              <button >Large</button>
             </div>
           </div>
         )
