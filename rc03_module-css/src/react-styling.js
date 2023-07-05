@@ -68,7 +68,7 @@ https://codesandbox.io/s/naughty-yonath-9o05v1?from-embed
 //?● Using third-party libraries 
 // *1-bootstrap
 https://getbootstrap.com/docs/5.3/getting-started/introduction/
-// *2-Teilwind
+// *2-Tailwind
 https://tailwindcss.com/docs/installation
 // *3-Material UI
 https://mui.com/material-ui/getting-started/
