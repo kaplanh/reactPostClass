@@ -9,9 +9,17 @@
 //? React ortaminda kullanilan event'larin bilindik tarayicilarda
 //? sorunsuz calismasini saglanir.
 
+const Events = () => {
+    return (
+        <div className="btn-group mx-auto">
+            <button className="btn btn-outline-primary">INC</button>
+            <button className="btn btn-outline-danger">DEL</button>
+            <button className="btn btn-outline-warning">DEC</button>
+        </div>
+    );
+};
 
-
-
+export default Events;
 
 //! message console'da guncellendigini ancak DOM'da guncellenmedigini gorduk.
 //* Bunun sebebi REACT'in aksi belirtilmedigi surece elementleri
