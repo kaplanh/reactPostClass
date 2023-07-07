@@ -4,19 +4,32 @@ const UseStateObject = () => {
         name: "",
         age: 0,
         sallary: 0,
-        toggle:false
-    });   
+        toggle: false,
+    });
+    const [color, setColor] = useState("bg-dark text-warning");
+    const [toggle, setToggle] = useState(false);
 
-    
+    const handleToggle = (e) => {
+        setToggle(!toggle);
+        if (toggle) {
+            setColor("bg-warning text-dark p-3");
+        } else {
+            setColor("bg-dark text-warning p-3");
+        }
+    };
 
     const handleValues = (e) => {
-        setValues({ ...values, [e.target.id]: e.target.value,toggle:!toggle });
+        setValues({
+            ...values,
+            [e.target.id]: e.target.value,
+            toggle: !toggle,
+        });
     };
-    // console.log(values);
+    console.log(values);
 
     return (
         <div>
-            <h1 >USE STATE OBJECT</h1>
+            <h1 onClick={handleToggle}>USE STATE OBJECT</h1>
             <h2 onMouseOver={handleToggle}>NAME:{values.name}</h2>
             <input
                 onChange={handleValues}
@@ -33,7 +46,7 @@ const UseStateObject = () => {
                 id="age"
                 value={values.age}
             />
-            <h2 >Salary:{values.sallary}</h2>
+            <h2 className={color}>Salary:{values.sallary}</h2>
             <input
                 onChange={handleValues}
                 type="number"
