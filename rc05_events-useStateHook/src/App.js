@@ -6,7 +6,7 @@ import UseStateObject from "./3-useState/UseStateObject"
 
 function App() {
   return (
-    <div>
+    <div className="text-center">
       <Events />
       {/* <Counter /> */}
       {/* <UseStateCounter /> */}
