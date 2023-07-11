@@ -1,7 +1,11 @@
+import Buttons from "./components/Buttons";
 
 function App() {
   return (
-    <div>Hello React</div>
+    <div>
+      
+          <Buttons />
+      </div>
   );
 }
 
