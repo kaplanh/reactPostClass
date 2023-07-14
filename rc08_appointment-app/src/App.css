@@ -1,14 +1,14 @@
 /*? Global Stlye for App */
 
 .doctor-img {
-  transition: transform 0.5s;
-  border-radius: 1rem;
-  max-height: 130px;
-}
-.doctor-img:hover {
-  transform: scale(1.05);
-  border: 2px solid red;
-  cursor: pointer;
+    transition: transform 0.5s;
+    border-radius: 1rem;
+    max-height: 130px;
+    &:hover {
+        transform: scale(1.05);
+        border: 2px solid red;
+        cursor: pointer;
+    }
 }
 
 .appointments {
@@ -37,5 +37,6 @@
   left: 50%;
   top: 50%;
   padding: 0.5rem;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%,-50%);
+  cursor: pointer;
 }
