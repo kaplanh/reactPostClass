@@ -36,6 +36,22 @@ const TutorialList = ({ tutorials, getTutorials }) => {
     getTutorials()
   }
 
+  //fetch metodu ile post get,delete methodlarini
+  // fetchin ikinci parametresine bir obje tanımlayıp içerisine method ve bodyyi yerleştiriyoruz
+  // const handleDelete = async (id) => {
+  //     try {
+  //         await fetch(`${BASE_URL}/${id}/`, {
+  //             method: "DELETE",
+  //         });
+  //     } catch (error) {
+  //         console.log(error);
+  //     }
+  //     getTutorials();
+  // };
+
+
+
+
   const editTutor = async (tutor) => {
     try {
       await axios.put(`${BASE_URL}/${tutor.id}/`, tutor)
