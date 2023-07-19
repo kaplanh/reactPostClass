@@ -10,27 +10,10 @@ const AddTutorial = ({ getTutorials }) => {
     const newTutor = { title: title, description: description }
     console.log(newTutor)
     postTutorial(newTutor)
+    
     setTitle("")
     setDescription("")
   }
-  //fetch ile post islemi
-
-// const postTutorial = async (newTutor) => {
-//     const BASE_URL = "https://tutorial-api.fullstack.clarusway.com/tutorials/";
-//     try {
-//         await fetch(`${BASE_URL}`, {
-//             method: "POST",
-//             headers: {
-//                 "Content-Type": "application/json",
-//             },
-//             body: JSON.stringify(newTutor),
-//         });
-//     } catch (error) {
-//         console.log(error);
-//     }
-//     getTutorials();
-// };
-
 
   const postTutorial = async (newTutor) => {
     const BASE_URL = "https://tutorial-api.fullstack.clarusway.com/tutorials/"

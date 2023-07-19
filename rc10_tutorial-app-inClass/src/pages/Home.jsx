@@ -6,18 +6,19 @@ import axios from "axios"
 const Home = () => {
   const [tutorials, setTutorials] = useState([])
 
-  //apiden axios yöntemi ile verileri cekmek icin fonk yazdik
   const getTutorials = async () => {
     const BASE_URL = "https://tutorial-api.fullstack.clarusway.com/tutorials/"
     try {
       // const res = await axios(BASE_URL)
       // setTutorials(res.data)
-      const  {data}  = await axios(BASE_URL)//havada dest ile respons icindeki data ya ulastik
+      const { data } = await axios(BASE_URL)
       setTutorials(data)
     } catch (error) {
       console.log(error)
     }
   }
+
+  
 
   console.log(tutorials)
 

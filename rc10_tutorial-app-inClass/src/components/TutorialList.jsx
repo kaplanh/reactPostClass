@@ -36,30 +36,14 @@ const TutorialList = ({ tutorials, getTutorials }) => {
     getTutorials()
   }
 
-  //fetch metodu ile post get,delete methodlarini
-  // fetchin ikinci parametresine bir obje tanımlayıp içerisine method ve bodyyi yerleştiriyoruz
-  // const handleDelete = async (id) => {
-  //     try {
-  //         await fetch(`${BASE_URL}/${id}/`, {
-  //             method: "DELETE",
-  //         });
-  //     } catch (error) {
-  //         console.log(error);
-  //     }
-  //     getTutorials();
-  // };
-
-
-
-
-  const editTutor = async (tutor) => {
-    try {
-      await axios.put(`${BASE_URL}/${tutor.id}/`, tutor)
-    } catch (error) {
-      console.log(error)
-    }
-    getTutorials()
-  }
+  // const editTutor = async (tutor) => {
+  //   try {
+  //     await axios.put(`${BASE_URL}/${tutor.id}/`, tutor)
+  //   } catch (error) {
+  //     console.log(error)
+  //   }
+  //   getTutorials()
+  // }
 
   return (
     <div className="container mt-4">
@@ -75,8 +59,8 @@ const TutorialList = ({ tutorials, getTutorials }) => {
           </tr>
         </thead>
         <tbody>
-          {tutorials?.map((item) => {
-            const { id, title, description } = item
+          {tutorials?.map(item => {
+            const { id, title, description } = item;
             return (
               <tr key={id}>
                 <th>{id}</th>
@@ -107,14 +91,14 @@ const TutorialList = ({ tutorials, getTutorials }) => {
                   />
                 </td>
               </tr>
-            )
+            );
           })}
         </tbody>
       </table>
 
-      <EditTutorial editItem={editItem} />
+      <EditTutorial editItem={editItem} getTutorials={getTutorials} />
     </div>
-  )
+  );
 }
 
 export default TutorialList
