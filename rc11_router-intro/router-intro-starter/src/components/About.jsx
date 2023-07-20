@@ -1,5 +1,8 @@
 const About = () => {
-  return <div>About</div>;
+  return <div>
+    <h1>About sayfasi</h1>
+    <button></button>
+  </div>;
 };
 
 export default About;
