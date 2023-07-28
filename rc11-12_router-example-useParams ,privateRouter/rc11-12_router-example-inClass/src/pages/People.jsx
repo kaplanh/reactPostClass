@@ -1,9 +1,19 @@
 import { useState, useEffect } from "react";
-import {useNavigate}from "react-router-dom"
+import { useNavigate } from "react-router-dom";
+
+//? Link, NavLink ve Navigate componentleri declarative routing
+//? gerceklestirmek icin kullanilir.
+//? Ornegin: Link ve NavLink Sayfada gorulebilen, kullanciyla
+//? bir etkilesim icerisinde bulunarak yonledirme yapilan bir
+//? componentlerdir. (Nav v.b)
+
+//* useNavigate() ise imperative routing icin elverislidir.
+//* Ornegin bir fonksiyon,event veye UseEffect icerisinde programsal
+//* olarak yonledirme yapmak icin kullanilabilir.
 
 const People = () => {
   const [people, setPeople] = useState([]);
-  let navigate=useNavigate()
+  let navigate = useNavigate();
 
   const getPeople = () => {
     fetch("https://reqres.in/api/users")
@@ -26,7 +36,10 @@ const People = () => {
               key={id}
               className=" col-sm-12 col-md-6 col-lg-4"
               type="button"
-              onClick={()=>navigate(`/people/${id}`,{state:person})}
+              //? Absolute path (tam adres vermek)
+              // onClick={()=>navigate(`/people/${id}`)}
+              //! Relative path (goreceli adres vermek)
+              onClick={() => navigate(`${id}`, { state: person })}
             >
               <img className="rounded" src={avatar} alt="img" />
               <h6>
