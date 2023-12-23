@@ -3,7 +3,12 @@ import React from "react";
 
 const Buttonn = () => {
     return (
-        <Container>
+        <Container
+            sx={{
+                border: "2px dotted red",
+                p: 2,
+            }}
+        >
             <Typography variant="h5" color={"error"} align="center">
                 Buttons
             </Typography>
@@ -25,7 +30,8 @@ const Buttonn = () => {
             <Stack
                 direction={{ xs: "column", sm: "row" }}
                 spacing={{ xs: 1, sm: 2, md: 3 }}
-                justifyContent={"center"} m={2}
+                justifyContent={"center"}
+                m={2}
             >
                 <Button fullWidth size="medium" variant="contained">
                     fullWidth
@@ -54,6 +60,7 @@ const Buttonn = () => {
                 direction={{ xs: "column", sm: "row" }}
                 spacing={{ xs: 1, sm: 2, md: 3 }}
                 justifyContent={"center"}
+                flexWrap={"wrap"}
             >
                 <Button size="small" variant="contained">
                     default
