@@ -7,7 +7,7 @@ import "./scss/app.scss";
 //*2-proje kücükse scss klasörü acip icinde _mixin.scss, _reset.scss, variable.scss, app.scss, card.module.scss gibi sass dosyalarini aciyoruz ve app.scss de topladigimiz mixin varibale vb scss dosyalarini App.jsx de import ediyoruz import "./scss/app.scss"
 
 //* yada her componente özel bir scss klasörü ve scss dosyasi olusturup direkt o componente import ediyoruz
-//* mesela scss klasörü icinde Header.jsx e özel olusturdugumheader.module.scss dosyasini Header.jsx de bu sekilde import ediyorum import HeaderStyle from "../scss/header.module.scss";
+//* sass i module ile birlikte kullanbiliriz mesela scss klasörü icinde Header.jsx e özel olusturdugumheader.module.scss dosyasini Header.jsx de bu sekilde import ediyorum import HeaderStyle from "../scss/header.module.scss";
 
 import data from "./data";
 
