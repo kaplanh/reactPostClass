@@ -1,70 +1,293 @@
-# Getting Started with Create React App
+# Task Traker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[:point_right: Click here to see on browser](https://task-traker-v1.netlify.app/)
 
-## Available Scripts
+![tasktraker](https://github.com/kaplanh/Task-Traker/assets/101884444/bdda2fdc-43e9-447f-aac9-9fb231901ad3)
 
-In the project directory, you can run:
+---
 
-### `yarn start`
+| **What's used in this app ?**                                                           | **How use third party libraries** | **Author**                                                                       |
+| --------------------------------------------------------------------------------------- | --------------------------------- | -------------------------------------------------------------------------------- |
+| [useEfect() Hook](https://react.dev/learn#using-hooks)                                  |                                   | [Take a look at my portfolio](https://kaplanh.github.io/Portfolio_with_CssFlex/) |
+| [useState() Hook](https://react.dev/learn#using-hooks)                                  |                                   | [Visit me on Linkedin](https://www.linkedin.com/in/kaplan-h/)                    |
+| [LocalStorage](https://www.w3schools.com/jsref/prop_win_localstorage.asp)               |                                   |                                                                                  |
+| [react-events](https://react.dev/learn#responding-to-events)                            |                                   |                                                                                  |
+| [React-Conditional rendering](https://react.dev/learn#conditional-rendering)            |                                   |                                                                                  |
+| [React-icons](https://react-icons.github.io/react-icons/)                               | npm i / yarn add react-icons      |                                                                                  |
+| [props-drilling](https://react.dev/learn#sharing-data-between-components)               |                                   |                                                                                  |
+| [Semantic-Commits](https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716) |                                   |                                                                                  |
+| Deploy with [Netlify](https://app.netlify.com/teams/kaplanh/sites)                      |                                   |                                                                                  |
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## How To Run This Project 🚀
 
-### `yarn test`
+<br/>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 💻 Install React 👇
 
-### `yarn build`
+```bash
+yarn create react-app .  or npx create-react-app .
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 💻 Install Sass 👇
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+yarn add sass  or npm i sass
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🔴 Delete these files and delete the imports👇
 
-### `yarn eject`
+    - App.test.js
+    - reportWebVitals.js
+    - setupTests.js
+    - favicon.ico
+    - logo192.png
+    - logo512.png
+    - manifest.json
+    - robots.txt
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 💻 Start the project 👇
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+yarn start or npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+OR
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+-   <strong>Clone the Repo</strong>
 
-## Learn More
+    ```sh
+    git clone
+    ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+-   <strong>Install NPM packages</strong>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    ```sh
+    npm install or yarn
+    ```
 
-### Code Splitting
+-   <strong>Run the project</strong>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+    ```sh
+    npm start or yarn start
+    ```
 
-### Analyzing the Bundle Size
+-   <strong>Open the project on your browser</strong>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+    ```sh
+    http://localhost:3000/
+    ```
 
-### Making a Progressive Web App
+-   ### <strong>Enjoy! 🎉</strong>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## Project Skeleton
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```
+ Task Traker (folder)
+|
+|----public (folder)
+│     └── index.html
+|----src (folder)
+|    |--- components (folder)
+│    │       ├── AddTaskForm.jsx
+│    │       ├── Header.jsx
+│    │       ├── ShowTasks.jsx
+│    │
+|    |--- helpers (folder)
+|    |       |── StartData.jsx
+│    │
+│    |--- pages (folder)
+|    |      ├── Home.jsx
+|    |
+│    ├--- App.js
+│    │--- App.css
+│    |--- index.js
+│
+│
+|-- .gitignore
+|── package-lock.json
+├── package.json
+|── README.md
+|── yarn.lock
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```
 
-### `yarn build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### At the end of the project, the following topics are to be covered;
+
+-   useEffect() & useState() & LocalStorage & Conditional rendering
+
+```jsx
+import React from "react";
+import Header from "../components/Header";
+import ShowTasks from "../components/ShowTasks";
+import { useState, useEffect } from "react";
+// import data from '../helper/starterData';
+
+const Home = () => {
+    const [tasks, setTasks] = useState(
+        JSON.parse(localStorage.getItem("tasks")) || []
+    );
+
+    useEffect(() => {
+        localStorage.setItem("tasks", JSON.stringify(tasks));
+    }, [tasks]);
+
+    // console.log(tasks);
+    return (
+        <div className="container">
+            <Header tasks={tasks} setTasks={setTasks} />
+            {tasks.length > 0 ? (
+                <ShowTasks tasks={tasks} setTasks={setTasks} />
+            ) : (
+                <p className="text-center">NO TASK TO SHOW</p>
+            )}
+        </div>
+    );
+};
+
+export default Home;
+```
+
+-   conditional rendering & toggle
+
+    ```jsx
+    import AddTaskForm from "./AddTaskForm";
+    import { useState } from "react";
+
+    const Header = ({ tasks, setTasks }) => {
+        const [show, setShow] = useState(false);
+        const [btnStyle, setBtnStyle] = useState({
+            name: "SHOW ADD TASK BAR",
+            bgColor: "purple",
+        });
+
+        //! React, default olarak state'leri hemen degistirmeyebilir.
+        //! Ekstra render'lari azaltmak icin state'leri toplu (batch) bir sekilde gunceller.
+        //! Bir event handler icerisindeki ardasik state'ler event bitiminde toplu bir
+        //! sekilde guncellenmis olur.State'lerin guncelenmesi gelis sirasina gorere yapilir.
+        //! Ayni event icerisinde birbirine bagli state'leri kullanirken buna dikkat etmek gerkir.
+
+        //? https://stackoverflow.com/questions/48563650/does-react-keep-the-order-for-state-updates
+
+        const handleShow = () => {
+            if (show) {
+                setBtnStyle({
+                    name: "SHOW ADD TASK BAR",
+                    bgColor: "purple",
+                });
+            } else {
+                setBtnStyle({
+                    name: "CLOSE ADD TASK BAR",
+                    bgColor: "red",
+                });
+            }
+            setShow(!show);
+        };
+        // console.log(show);
+
+        return (
+            <header className="header">
+                <h1>TASK TRACKER</h1>
+                <button
+                    onClick={handleShow}
+                    className="btn"
+                    style={{ backgroundColor: btnStyle.bgColor }}
+                >
+                    {btnStyle.name}
+                </button>
+                {show && <AddTaskForm tasks={tasks} setTasks={setTasks} />}
+            </header>
+        );
+    };
+
+    export default Header;
+    ```
+
+-   with filter deleting
+
+    ```jsx
+    import { FaTimesCircle } from "react-icons/fa";
+
+    const ShowTasks = ({ tasks, setTasks }) => {
+        console.log(tasks);
+        const toggleDone = (id) => {
+            setTasks(
+                tasks.map((task) =>
+                    task.id === id ? { ...task, isDone: !task.isDone } : task
+                )
+            );
+        };
+
+        const deleteTask = (id) => {
+            setTasks(tasks.filter((task) => task.id !== id));
+        };
+        return (
+            <div>
+                {tasks.map((task) => {
+                    const { id, task: text, day, isDone } = task;
+                    return (
+                        <div
+                            key={id}
+                            className={`task ${isDone ? "done" : ""}`}
+                            onDoubleClick={() => toggleDone(id)}
+                        >
+                            <h3>
+                                {text}
+                                <FaTimesCircle
+                                    style={{ color: "red" }}
+                                    onClick={() => deleteTask(id)}
+                                />
+                            </h3>
+                            <h6>{day}</h6>
+                        </div>
+                    );
+                })}
+            </div>
+        );
+    };
+
+    export default ShowTasks;
+    ```
+
+-   Semantic Commit Messages
+    See how a minor change to your commit message style can make you a better programmer.
+
+    Format: <type>(<scope>): <subject>
+
+    <scope> is optional
+
+    -   Example
+
+    ```
+                feat: add hat wobble
+        ^--^  ^------------^
+        |     |
+        |     +-> Summary in present tense.
+        |
+        +-------> Type: chore, docs, feat, fix, refactor, style, or test.
+    ```
+
+-   More Examples:
+    -   `feat`: (new feature for the user, not a new feature for build script)
+    -   `fix`: (bug fix for the user, not a fix to a build script)
+    -   `docs`: (changes to the documentation)
+    -   `style`: (formatting, missing semi colons, etc; no production code change)
+    -   `refactor`: (refactoring production code, eg. renaming a variable)
+    -   `test`: (adding missing tests, refactoring tests; no production code change)
+    -   `chore`: (updating grunt tasks etc; no production code change)
+
+---
+
+## Feedback and Collaboration
+
+I value your feedback and suggestions. If you have any comments, questions, or ideas for improvement regarding this project or any of my other projects, please don't hesitate to reach out.
+I'm always open to collaboration and welcome the opportunity to work on exciting projects together.
+Thank you for visiting my project. I hope you have a wonderful experience exploring it, and I look forward to connecting with you soon!
+
+<p align="center"> ⌛<strong> Happy Coding </strong> ✍ </p>
